@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { MenuComponent } from './components/menu/menu.component';
 
+import { MatToolbarModule } from "@angular/material/toolbar"
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -13,7 +15,8 @@ import { MenuComponent } from './components/menu/menu.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatToolbarModule
   ],
   providers: [
     provideClientHydration(),
