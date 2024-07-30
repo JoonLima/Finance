@@ -1,0 +1,31 @@
+.menu {
+  background-color: #404083;
+  color: #fff;
+  display: flex;
+  padding: 0.8rem;
+  justify-content: space-between;
+
+  .links {
+    display: flex;
+    gap: 30px;
+
+    .logo {
+      font-size: 20px;
+      letter-spacing: 0.4rem;
+    }
+
+    a {
+      text-decoration: none;
+      color: #fff;
+    }
+
+    a:hover {
+      color: #d6d6d6;
+    }
+  }
+
+  .usuario {
+    display: flex;
+    align-items: center;
+  }
+}
