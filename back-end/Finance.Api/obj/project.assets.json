@@ -3200,11 +3200,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projetos-Pessoais\\.NET\\Finance\\Finance.Api\\Finance.Api.csproj",
+      "projectUniqueName": "C:\\Projetos-Pessoais\\Projetos Pessoais\\Finance\\back-end\\Finance.Api\\Finance.Api.csproj",
       "projectName": "Finance.Api",
-      "projectPath": "C:\\Projetos-Pessoais\\.NET\\Finance\\Finance.Api\\Finance.Api.csproj",
+      "projectPath": "C:\\Projetos-Pessoais\\Projetos Pessoais\\Finance\\back-end\\Finance.Api\\Finance.Api.csproj",
       "packagesPath": "C:\\Users\\Jonathan Ventura\\.nuget\\packages\\",
-      "outputPath": "C:\\Projetos-Pessoais\\.NET\\Finance\\Finance.Api\\obj\\",
+      "outputPath": "C:\\Projetos-Pessoais\\Projetos Pessoais\\Finance\\back-end\\Finance.Api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

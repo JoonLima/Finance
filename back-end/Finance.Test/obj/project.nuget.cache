@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Ep3Of7c2OfI=",
+  "dgSpecHash": "v2VYPrvFDMM=",
   "success": true,
-  "projectFilePath": "C:\\Projetos-Pessoais\\.NET\\Finance\\Finance.Test\\Finance.Test.csproj",
+  "projectFilePath": "C:\\Projetos-Pessoais\\Projetos Pessoais\\Finance\\back-end\\Finance.Test\\Finance.Test.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Jonathan Ventura\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\Jonathan Ventura\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",

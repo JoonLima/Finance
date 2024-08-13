@@ -35,6 +35,7 @@ namespace Finance.Api.Domain.Services.Classes
             return new UsuarioLoginResponseContratc
             {
                 Id = usuario.Id,
+                Nome = usuario.Nome,
                 Email = usuario.Email,
                 Token = _tokenService.GerarToken(_mapper.Map<Usuario>(usuario))
             };
