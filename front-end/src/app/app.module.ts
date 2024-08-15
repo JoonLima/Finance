@@ -17,6 +17,9 @@ import { InterfaceBaseComponent } from './components/interface-base/interface-ba
 import { ExtratoComponent } from './pages/extrato/extrato.component';
 import { LoginComponent } from './pages/login/login.component';
 import { RegistroComponent } from './pages/registro/registro.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -34,6 +37,10 @@ import { RegistroComponent } from './pages/registro/registro.component';
     MatToolbarModule,
     MatButtonModule,
     MatInputModule,
+    ReactiveFormsModule,
+    FormsModule,
+    MatFormFieldModule,
+    HttpClientModule,
   ],
   providers: [provideClientHydration(), provideAnimationsAsync()],
   bootstrap: [AppComponent],

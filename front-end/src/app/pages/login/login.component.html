@@ -1,17 +1,62 @@
 <div class="container-login">
   <div class="login">
     <span class="titulo-login">LOGIN</span>
-    <form class="form">
-      <label class="campo-form"
+
+    <form
+      class="form"
+      (ngSubmit)="login()"
+      [formGroup]="loginForm"
+      #formDir="ngForm"
+    >
+      <label
+        [ngClass]="{
+          'erro-label':
+            (email.invalid && formDir.submitted) || email.errors?.['email'],
+        }"
+        class="campo-form"
+        class="campo-form"
         >Email
-        <input type="email" placeholder="Ex. pat@example.com" />
+        <input
+          formControlName="email"
+          type="email"
+          [ngClass]="{
+            'erro-input':
+              (email.invalid && formDir.submitted) || email.errors?.['email'],
+          }"
+        />
+        <div
+          *ngIf="email.errors?.['required'] && formDir.submitted"
+          class="erro"
+        >
+          <span>O Email é obrigatório</span>
+        </div>
+        <div class="erro" *ngIf="email.errors?.['email']">Email inválido.</div>
       </label>
-      <label class="campo-form"
+      <label
+        [ngClass]="{ 'erro-label': senha.invalid && formDir.submitted }"
+        class="campo-form"
         >Senha
-        <input type="password" placeholder="Ex. 123456" />
+        <input
+          formControlName="senha"
+          type="password"
+          [ngClass]="{ 'erro-input': senha.invalid && formDir.submitted }"
+        />
+        <div *ngIf="senha.invalid && formDir.submitted" class="erro">
+          <span>A senha é obrigatória</span>
+        </div>
       </label>
-      <button class="btn btn-primary" mat-stroked-button>Login</button>
+      <button class="btn btn-primary" mat-stroked-button>
+        <div
+          *ngIf="loading"
+          class="spinner-border spinner-border-sm"
+          role="status"
+        >
+          <span class="visually-hidden">Loading...</span>
+        </div>
+        <span *ngIf="!loading">Entrar</span>
+      </button>
     </form>
+
     <span>Não tem conta? <a routerLink="/registrar">Criar</a></span>
   </div>
 </div>

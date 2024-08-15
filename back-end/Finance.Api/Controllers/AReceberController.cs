@@ -17,7 +17,7 @@ namespace Finance.Api.Controllers
         }
 
         [HttpPost]
-        [Authorize]
+        [AllowAnonymous]
         public async Task<IActionResult> Criar(AReceberRequestContract contrato)
         {
             try
@@ -32,7 +32,7 @@ namespace Finance.Api.Controllers
         }
 
         [HttpGet]
-        [Authorize]
+        [AllowAnonymous]
         public async Task<IActionResult> ObterTodos()
         {
             try
@@ -48,7 +48,7 @@ namespace Finance.Api.Controllers
 
         [HttpGet]
         [Route("{id}")]
-        [Authorize]
+        [AllowAnonymous]
         public async Task<IActionResult> Obter(Guid id)
         {
             try
@@ -63,7 +63,8 @@ namespace Finance.Api.Controllers
         }
 
         [HttpPut]
-        [Authorize]
+        [Route("{id}")]
+        [AllowAnonymous]
         public async Task<IActionResult> Atualizar(Guid id, AReceberRequestContract contrato)
         {
             try
@@ -78,7 +79,8 @@ namespace Finance.Api.Controllers
         }
 
         [HttpDelete]
-        [Authorize]
+        [Route("{id}")]
+        [AllowAnonymous]
         public async Task<IActionResult> Deletar(Guid id)
         {
             try

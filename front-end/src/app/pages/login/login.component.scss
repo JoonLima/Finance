@@ -1,11 +1,12 @@
 .container-login {
-  border: 1px solid blue;
+  border: 1px solid #404083;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 350px;
   width: 300px;
   font-size: 15px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
   .login {
     display: flex;
@@ -23,7 +24,7 @@
       display: flex;
       flex-direction: column;
       width: 80%;
-      gap: 25px;
+      gap: 20px;
 
       .campo-form {
         display: flex;
